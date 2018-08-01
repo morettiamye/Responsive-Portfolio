@@ -1,75 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+<!doctype html>
+<html lang="en-us">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Amy Moretti</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<!-- Begin Body-->
 <body>
 
-    <!--Header & Navigation-->
-    <div id="name">
-        <h1>Amy Moretti</h1>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    
-    <div class="navigation">
-    
-        <Div id="navlist">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </div>
-    
-    </div>      
+  </header>
 
-    <!-- Main Section-->
-    <div class="main-section">
-                
-        <div class="about">
-            <h2>Contact</h2>
-        
-            <div class="contactform">
-                    <form action="/action_page.php">
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                      </form>
-            </div>
-        
-        </div>    
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright 2018
     </div>
-            
-            <!-- Footer -->
-            <div id="footer">
-                <p>Copyright Amy Moretti 2018</p>
-            </div>
-        
-        
-        
-        </body>
-        </html>
-
-    
-    <!-- Footer -->
-    <div id="footer">
-        <p>Copyright Amy Moretti 2018</p>
-    </div>
-
-
-
+  </footer>
 </body>
+
 </html>
